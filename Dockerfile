@@ -1,7 +1,7 @@
 FROM debian:jessie
 
 RUN apt-get update && \
-    apt-get install -y --no-install-recommends git curl moreutils gettext-base bzip2 \
+    apt-get install -y --no-install-recommends git curl moreutils gettext-base bzip2 ca-certificates \
     libxt6 libgtk2.0-0 libdbus-glib-1-2 libasound2 libXcomposite1 libXdamage1 libXext6 libXrender1 libfontconfig libfreetype6 && \
     rm -rf /var/lib/apt
 
