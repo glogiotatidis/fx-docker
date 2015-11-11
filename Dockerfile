@@ -6,9 +6,9 @@ RUN apt-get update && \
     rm -rf /var/lib/apt
 
 ENV VERSION 4.0
-
 RUN curl https://archive.mozilla.org/pub/mozilla.org/firefox/releases/$VERSION/linux-x86_64/en-US/firefox-$VERSION.tar.bz2 | tar jx
 
-WORKDIR /firefox
+COPY Profile/.mozilla /root/.mozilla
 
+WORKDIR /firefox
 CMD ["./firefox", "--no-remote"]
