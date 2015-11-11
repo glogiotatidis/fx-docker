@@ -6,3 +6,4 @@ user_pref("browser.uitour.requireSecure", false);
 user_pref("browser.uitour.testingOrigins", "http://127.0.0.1:8000, https://snippets-dev.allizom.org, https://snippets.allizom.org, https://snippets.mozilla.org");
 // Firefox < 36
 user_pref("browser.uitour.whitelist.add.testing", "127.0.0.1:8000");
+user_pref("browser.shell.checkDefaultBrowser", false);
