@@ -7,3 +7,4 @@ user_pref("browser.uitour.testingOrigins", "$SNIPPET_HOST, https://snippets-dev.
 // Firefox < 36
 user_pref("browser.uitour.whitelist.add.testing", "$SNIPPET_HOST_NO_PROTOCOL");
 user_pref("browser.shell.checkDefaultBrowser", false);
+user_pref("browser.tabs.warnOnClose", false);
