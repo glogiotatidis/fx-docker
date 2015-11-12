@@ -23,3 +23,21 @@ You can also define a custom Snippets provider with SNIPPET_HOST env variable.
   http://localhost refers to containers internal ip, so if you run a
   development instance on your laptop you probably want to change
   localhost to the laptop's hostname.
+
+
+## Testing snippets fast
+
+0. Setup your local [snippets server](https://github.com/mozilla/snippets-service/)
+1. Setup the snippet template and snippet
+2. Copy `./bin/local_variables.sh-dist` to `./bin/local_variables.sh`
+and update SNIPPET_HOST to your host.
+3. Run `./bin/test.sh`
+
+The final step will sequentially start Firefox browsers from version
+15.0 to the latest version. The browser gets auto-configured to fetch
+snippets from your server thus you only have to check that the snippet
+is OK and then close the browser window. In a moment the next Firefox
+version will appear.
+
+You can avoid setting SNIPPET_HOST and test the production snippets
+against multiple versions of Firefox.
