@@ -8,3 +8,4 @@ do
     git branch -D firefox-$i || true # Ignore error if branch does not exist.
     ./bin/add-version.sh $i
 done
+git checkout firefox-base
