@@ -41,3 +41,11 @@ version will appear.
 
 You can avoid setting SNIPPET_HOST and test the production snippets
 against multiple versions of Firefox.
+
+
+## Variables
+
+* SNIPPET_HOST to set snippet server
+* PRODUCT_NAME to set product name to something other than %NAME%.
+  Useful when testing specific snippets with Client Match Rules that
+  set product name.
