@@ -5,7 +5,7 @@ then
     . ./bin/local_variables.sh
 fi;
 
-VERSION=${1:-53.0}
+VERSION=${1:-57.0}
 SNIPPET_HOST=${SNIPPET_HOST:-"https://snippets.mozilla.com"}
 SNIPPET_PRODUCT_NAME=${SNIPPET_PRODUCT_NAME:-"%NAME%"}
 
